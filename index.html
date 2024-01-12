@@ -6,71 +6,80 @@
     <title>Allergic Boy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #000000; /* Set your desired background color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         header {
-            background-color: #111;
-            color: #fff;
             text-align: center;
-            padding: 20px;
+            margin-right: 20px; /* Adjust this value to move the logos to the left */
         }
 
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Set an explicit width for the old logo */
+        header .old-logo {
+            cursor: pointer; /* Change cursor on hover */
+        }
+
+        header .new-logo {
+            max-width: 45%; /* Adjust this value to change the size of the new logo */
+            height: auto;
+        }
+
+        header .new-logo:hover {
+            content: url('images/ihatemusic.png'); /* Replace with the path or URL to the alternate logo */
         }
 
         .social-links {
             margin-top: 20px;
+            display: flex;
+            align-items: center;
         }
 
         .social-links a {
-            display: inline-block;
-            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            margin: 0 10px; /* Adjust margin if necessary */
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #111;
-            color: #fff;
+        .social-links img {
+            max-width: 30px;
+            height: auto;
         }
     </style>
 </head>
 <body>
 
     <header>
-         <!-- Replace "path/to/logo.png" with the path or URL to your logo -->
-        <img src="path/to/logo.png" alt="Allergic Boy Logo">
-        <h1>Allergic Boy</h1>
+        <!-- Replace "images/chromeflower.png" with the path or URL to your initial logo -->
+        <!-- <img class="old-logo" src="images/chromeflower.png" alt="Old Album Logo"> -->
+        <!-- Add a new class for the new logo -->
+        <img class="new-logo" src="images/chromeflower.png" alt="Album Logo">
     </header>
 
-    <section>
-        <img class="artist-image" src="path/to/artist-image.jpg" alt="Allergic Boy - Artist Image">
-        
-        <p>Welcome to the official website of Allergic Boy!</p>
-
-        <p>Check out our latest releases and connect with us on social media:</p>
-
-        <div class="social-links">
-            <a href="https://www.instagram.com/allergicboy__" target="_blank">Instagram</a>
-            <a href="https://www.youtube.com/@butterflyclique3819" target="_blank">YouTube</a>
-            <a href="https://on.soundcloud.com/PaZVcHwTv53zvnss5" target="_blank">SoundCloud</a>
-            <a href="https://open.spotify.com/artist/1vc244698Oy2naYz6Oakdg?si=jwiD4XAHS42FL0nVUs9kfQ" target="_blank">Spotify</a>
-        </div>
-    </section>
-
-    <footer>
-        &copy; 2024 Allergic Boy. All rights reserved.
-    </footer>
+    <div class="social-links">
+        <!-- Replace the URLs with your actual social media links -->
+        <a href="https://www.instagram.com/allergicboy__" target="_blank">
+            <img src="images/icons8-instagram-24.png" alt="Instagram">
+        </a>
+        <a href="https://youtu.be/AOE7NCG_kBo" target="_blank">
+            <img src="images/icons8-youtube-24.png" alt="YouTube">
+        </a>
+        <a href="https://on.soundcloud.com/PaZVcHwTv53zvnss5" target="_blank">
+            <img src="images/icons8-soundcloud-24.png" alt="SoundCloud">
+        </a>
+        <a href="https://open.spotify.com/artist/1vc244698Oy2naYz6Oakdg?si=jwiD4XAHS42FL0nVUs9kfQ" target="_blank">
+            <img src="images/icons8-spotify-24.png" alt="Spotify">
+        </a>
+        <a href="https://music.apple.com/allergicboy" target="_blank">
+            <img src="images/icons8-apple-24.png" alt="Apple Music">
+        </a>
+    </div>
 
 </body>
 </html>
