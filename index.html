@@ -3,64 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Allergic Boy</title>
     <style>
         body {
-            background-color: #b50a0a; /* Default background color */
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
         }
 
-        p {
-            margin-bottom: 20px;
-            color: white;
+        header {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        a {
-            color: white;
-            text-decoration: none;
-            margin-bottom: 20px;
+        .social-links {
+            margin-top: 20px;
         }
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+        .social-links a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #111;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <p>BEANS BEANS BEANS BEANS</p>
-    <img src="Untitled.jpeg" alt="beans">
-    <a href="https://www.loveandlemons.com/bean-recipes/" target="_blank">Beans</a>
 
-    <button onclick="changeBackgroundColor()">Click me</button>
+    <header>
+         <!-- Replace "path/to/logo.png" with the path or URL to your logo -->
+        <img src="path/to/logo.png" alt="Allergic Boy Logo">
+        <h1>Allergic Boy</h1>
+    </header>
 
-    <script>
-        function changeBackgroundColor() {
-            document.body.style.backgroundColor = getRandomColor();
-        }
+    <section>
+        <img class="artist-image" src="path/to/artist-image.jpg" alt="Allergic Boy - Artist Image">
+        
+        <p>Welcome to the official website of Allergic Boy!</p>
 
-        function getRandomColor() {
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-    </script>
+        <p>Check out our latest releases and connect with us on social media:</p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/allergicboy__" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/@butterflyclique3819" target="_blank">YouTube</a>
+            <a href="https://on.soundcloud.com/PaZVcHwTv53zvnss5" target="_blank">SoundCloud</a>
+            <a href="https://open.spotify.com/artist/1vc244698Oy2naYz6Oakdg?si=jwiD4XAHS42FL0nVUs9kfQ" target="_blank">Spotify</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Allergic Boy. All rights reserved.
+    </footer>
+
 </body>
 </html>
